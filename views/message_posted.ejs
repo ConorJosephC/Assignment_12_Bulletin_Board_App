@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+  <title>Message Posted</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+
+  <%- include partials/navbar.ejs %>
+
+  <h1>Your Message Has Been Posted!</h1>
+  <h2>Click on 'Show All Messages' above to see messages from everyone!</h2>
+
+  <table class="table_new_message">
+
+    <thead scope="row">
+      <tr>
+        <td class="column_1">Nickname:</td>
+        <td class="column_1">Title:</td>
+        <td class="column_2">Message:</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="column_3">
+        <%= data.nickname %>
+      </td>
+        <td class="column_3">
+        <%= data.title %>
+      </td>
+        <td class="column_4">
+        <%= data.yourmessage %>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>
