@@ -1,4 +1,4 @@
-# _Assignment_12_Bulletin_Board_App_
+# Assignment_12_Bulletin_Board_App
 
 ## About the app
 
@@ -10,7 +10,7 @@ A website that allows people to post messages to a page. A message consists of a
 
 ## Dependencies and Quick setup guide
 
-To get this application working you will need to run the following in the command line:
+To get this application working you will need to clone or download the repository and run the following in the command line:
 
     npm install express ejs body-parser pg
 
