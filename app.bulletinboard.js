@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({
 
 const { Client } = require('pg')
 const client = new Client({
-	database: 'bulletinboard',				//process.env.PG_DB_BULLETINBOARD,
+	database: 'bulletinboard',
   host: 'localhost',
-  user: 'postgres',									//process.env.PGUSER,
-  password: 'p0stgr3SQL',						//process.env.PGPASSWORD
+  user: process.env.POSTGRES_USER,
+	password: process.env.POSTGRES_PASSWORD,
 	port: 5432
 })
 
